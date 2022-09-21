@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala/Assistir</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="headerSala">
+        <h1>sala de video</h1>
+        <h3>Click em 'assistir'</h3>
+    </header>
+
+    
+    <main >
+        <section id="principal">
+
+            <label for="link_video">URL: </label>
+            <input type="url" id="linkVideo" placeholder="https://www.youtube.com/embed/..." title ="URL deve conter '/embed/' no local do '/watch?v=' ">
+            
+            <div class="bttnSala">
+                <button onclick="link.assistir()">Assistir  </button>
+                <button onclick="link.ajuda()">Ajuda </button>
+            </div>
+
+        </section>
+
+        <div id="containerVideo">
+
+        </div>
+
+        <div id ="ajuda" class="hide">
+         
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>GitHub:</p>
+        <a href="https://github.com/Ikaro-silva">Ikaro-silva</a>
+    </footer>
+</body>
+</html>
